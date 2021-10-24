@@ -1,87 +1,118 @@
 <!DOCTYPE html>
-<html lang="En">
-    <head>
-        <title>Form Pemesanan Pizza</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <header>
-            <h1>Black Goose Bistro | Pizza-on-Demand</h1>
-            <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
-        </header>
-        <p>Your Information</p>
-        <form method="POST" action="http://blackgoosebistro.com/pizza.php">
-            <div>
-                <label>Name :</label>
-                <input style="margin-bottom:5px;" type="text" name="customername">
-                <br>
-                <label>Address :</label>
-                <input style="margin-bottom: 5px;" type="text" name="address">
-                <br>
-                <label>Telephone Number :</label>
-                <input style="margin-bottom: 5px;" type="number" name="telephone">
-                <br>
-                <label>Email:</label>
-                <input style="margin-bottom: 5px;" type="text" name="email">
-                <br>
-                <label style="margin-bottom: 5px;">Delivery Intructions :</label>
-                <br>
-                <textarea name="intruction" placeholder="No more than 400 characters long" cols="35" rows="4" maxlength="400"></textarea>
-            </div>
-            <div>
-                <h3 style="margin-bottom: -15px;">Design Your Dream Pizza :</h3>
-                <p>Pizza specs</p>
-                <label>Crust (Choose one) :</label>
-                <br>
-                <input style="margin-left: 15px;" type="radio" required="">Classic white
-                <br>
-                <input style="margin-left: 15px;" type="radio" required="">Multigrain
-                <br>
-                <input style="margin-left: 15px;" type="radio" required="">Cheese-stuffed crust
-                <br>
-                <input style="margin-left: 15px;" type="radio" required="">Gluten-free
-            </div>
-            <div>
-                <label>Toppings (Choose as many you want) :</label>
-                <br>
-                <input style="margin-left: 15px;" type="checkbox" checked="">Red sauce
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">White sauce
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">Mozzarella Cheese
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">Pepperoni
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">Mushrooms
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">Peppers
-                <br>
-                <input style="margin-left: 15px;" type="checkbox">Anchovies
-                <br>
-            <div>
-                <p style="margin-bottom: -3px;">Number</p>
-                <label>How many pizzas :</label>
-                <select id="how-many-pizzas">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                </select>
-            </div>
-                <br>
-                <button type="submit" value="submit">Bring me a pizza!</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+  </head>
+  <body>
+    <div>
+      <header style="margin-bottom:25px;">
+        <nav style="border: solid;">
+          <ul style="list-style-type: none;">
+            <li style="display: inline-block; margin-left: -25px; margin-right: 40px;"><a href="#">Home</a> |</li>
+            <li style="display: inline-block; margin-right: 40px;"><a href="#">Generate Link</a> |</li>
+            <li style="display: inline-block; margin-right: 40px;"><a href="#">Transaction History</a> |</li>
+            <li style="display: inline-block; margin-right: 40px;"><a href="#">Policy</a> |</li>
+            <li style="display: inline-block;"><a href="#">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <form method="POST" action="form.html">
+        <div style="display: inline-block">
+          <div style="float: left; margin-right: 20px;">
+            <input style="width: 100px;" type="image" src="https://media.discordapp.net/attachments/894919708938223657/900386515190956042/dell_laptop_dell_latitude_e6410_ci5_termurah_berkualitas_full05_jtaqurrw.jpg" alt="Image Laptop"><br>
+            <button type="submit">Upload Picture</button>
+          </div>
+          <div style="float: right;">
+            <table>
+              <tbody>
+                <tr>
+                  <td style="width:150px;"><label>Title Here</label></td>
+                  <td>:</td>
+                  <td><input style="margin-left:10px; width:260px" type="text" name="title"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Description</label></td>
+                  <td>:</td>
+                  <td><textarea style="margin-left:10px;" name="deskripsi" cols="32" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Account Member</label></td>
+                  <td>:</td>
+                  <td><input style="margin-left:10px; width:260px" type="text" name="Account Number"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Bank</label></td>
+                  <td>:</td>
+                  <td>
+                    <input style="margin-left:10px; width:200px" type="text" list="namebank" name="Bank">
+                    <datalist id="namebank">
+                      <option value="BCA">
+                      <option value="BRI">
+                      <option value="HSBC">
+                      <option value="Mandiri">
+                      <option value="BNI">
+                      <option value="BSI">
+                    </datalist>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Account Holder</label></td>
+                  <td>:</td>
+                  <td><input style="margin-left:10px; width:240px" type="text" name="Account Holder" value="Name Here"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Transaction</label></td>
+                  <td>:</td>
+                  <td>
+                    <select style="margin-left:10px;" name="Numbertransaction">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"></td>
+                  <td></td>
+                  <td><label style="margin-left:10px;">* If the transaction is for 3 person, choose 3 from the drop-down list</label></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"></td>
+                  <td></td>
+                  <td><input style="margin-left:10px;" type="checkbox" checked="">Send to Mobile Phone</td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"></td>
+                  <td></td>
+                  <td><input style="margin-left:10px;" type="checkbox" checked="">Send to Email</td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Send to Mobile Phone</label></td>
+                  <td>:</td>
+                  <td><input style="margin-left:10px; width:200px" type="text" name="title"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"><label>Send to Email</label></td>
+                  <td>:</td>
+                  <td><input style="margin-left:10px; width:200px" type="text" name="title"></td>
+                </tr>
+                <tr>
+                  <td style="width:150px;"></td>
+                  <td></td>
+                  <td>
+                    <button style="margin-top:20px; margin-left:10px; background:green;" type="submit">Generate Nabr Link</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
-        
-
-
-
-
-
-            
